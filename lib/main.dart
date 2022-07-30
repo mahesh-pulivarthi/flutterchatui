@@ -1,4 +1,5 @@
 import 'package:Muchatlu/screens/home_screen.dart';
+import 'package:Muchatlu/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.redAccent,
         secondaryHeaderColor: Color(0xFFFEF9EB),
       ),
-      home: const HomeScreen(),
+      // home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
