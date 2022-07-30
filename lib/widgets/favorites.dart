@@ -1,7 +1,7 @@
+import 'package:Muchatlu/models/message_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_chat_ui/models/message_model.dart';
 
 import '../screens/chat_screen.dart';
 

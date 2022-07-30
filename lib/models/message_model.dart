@@ -1,5 +1,5 @@
+import 'package:Muchatlu/models/user.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_chat_ui/models/user.dart';
 
 class Message {
   final User sender;
