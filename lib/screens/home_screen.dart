@@ -11,6 +11,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int selectedIndex = 0;
+  void updateSelecctedIndex(int index) {
+    print("Selected index: $index");
+    setState(() {
+      selectedIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,26 +48,40 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          const CategorySelector(),
-          Expanded(
-            child: Container(
-              decoration: BoxDecoration(
-                  color: Theme.of(context).secondaryHeaderColor,
-                  // ignore: prefer_const_constructors
-                  borderRadius: BorderRadius.only(
-                    topLeft: const Radius.circular(30),
-                    topRight: const Radius.circular(30),
-                  )),
-              child: Column(
-                children: const [
-                  Favorites(),
-                  RecentChats(),
-                ],
-              ),
-            ),
-          ),
+          CategorySelector(updateSelectedIndex: updateSelecctedIndex),
+          getContent(),
+          // Expanded(
+          //   child: Container(
+          //     decoration: BoxDecoration(
+          //         color: Theme.of(context).secondaryHeaderColor,
+          //         // ignore: prefer_const_constructors
+          //         borderRadius: BorderRadius.only(
+          //           topLeft: const Radius.circular(30),
+          //           topRight: const Radius.circular(30),
+          //         )),
+          //     child: Column(
+          //       children: const [
+          //         Favorites(),
+          //         RecentChats(),
+          //       ],
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );
+  }
+
+  getContent() {
+    switch (selectedIndex) {
+      case 0:
+        return Text(selectedIndex.toString());
+      case 1:
+        return Text(selectedIndex.toString());
+      case 2:
+        return Text(selectedIndex.toString());
+      case 3:
+        return Text(selectedIndex.toString());
+    }
   }
 }

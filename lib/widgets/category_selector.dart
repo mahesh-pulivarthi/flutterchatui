@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CategorySelector extends StatefulWidget {
-  const CategorySelector({Key? key}) : super(key: key);
+  Function updateSelectedIndex;
+  CategorySelector({Key? key, required this.updateSelectedIndex})
+      : super(key: key);
 
   @override
   State<CategorySelector> createState() => _CategorySelectorState();
@@ -24,6 +26,7 @@ class _CategorySelectorState extends State<CategorySelector> {
                 setState(() {
                   selectedIndex = index;
                 });
+                widget.updateSelectedIndex(selectedIndex);
               },
               child: Padding(
                 padding: const EdgeInsets.symmetric(
