@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607078203295",
+    "project_id": "flutterchatui-1c462",
+    "storage_bucket": "flutterchatui-1c462.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607078203295:android:d0ef9ea2b0203bc028c7aa",
+        "android_client_info": {
+          "package_name": "com.example.flutter_chat_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607078203295-r156vmsl7odbr2f9oh3p90gg4p5qgiv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1F42mO3x_CFJ8aWt9N43Ll04BVy96nfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607078203295-r156vmsl7odbr2f9oh3p90gg4p5qgiv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
